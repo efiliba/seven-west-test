@@ -1,6 +1,7 @@
+import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { NextPage } from 'next';
-import Card from '../src/modules';
+import { Card } from '../src/modules';
 
 const IndexPage: NextPage = () =>
   <>
