@@ -1,11 +1,19 @@
-import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import { NextPage } from 'next';
+import Card from '../src/modules';
 
 const IndexPage: NextPage = () =>
-  <Title>Index Page</Title>;
+  <>
+    <GlobalStyle />
+    <Card image="/tile.jpg" logo="/logo.png" caption="Home and Away" />
+  </>;
 
 export default IndexPage;
 
-const Title = styled.h1`
-  color: red;
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    background-color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
 `;

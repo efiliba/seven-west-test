@@ -1,10 +1,16 @@
-import { mount } from 'enzyme';
-import IndexPage from './index';
+import { mount, shallow } from 'enzyme';
+import IndexPage from '.';
 
-describe('Index', () => {
+describe('IndexPage', () => {
   it('should render without crashing', () => {
     const wrapper = mount(<IndexPage/>);
 
-    expect(wrapper.find('h1').text()).toBe('Index Page');
+    expect(wrapper.exists(IndexPage)).toBe(true);
+  });
+
+  it('should render GlobalStyle component', () => {
+    const wrapper = shallow(<IndexPage/>);
+
+    expect(wrapper.exists('GlobalStyleComponent')).toBe(true);
   });
 });
