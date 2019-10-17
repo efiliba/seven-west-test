@@ -18,21 +18,24 @@ const Container = styled.div`
   left: 0;
   right: 0;
   display: flex;
-  align-items: center;
   height: 30%;
   background-color: rgba(0, 0, 0, .5);
 `;
 
 const Logo = styled.img`
   height: 80%;
-  padding: 0 .5rem;
+  margin: auto .5rem;
 
   @media (min-width: 768px) {
-    padding: 0 1rem;
+    padding: 0 .5rem;
   }
 `;
 
 const Caption = styled.div`
+  height: 100%;
+  overflow: hidden; /* Hide text until image height known */
+  display: grid;
+  align-content: center;
   font-size: 1.3rem;
   font-weight: bold;
   color: white;
@@ -48,4 +51,3 @@ const Caption = styled.div`
 `;
 
 export default LogoCaption;
-

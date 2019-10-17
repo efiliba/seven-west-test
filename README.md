@@ -22,7 +22,7 @@ My first decision was to use Next.js.
 - I used this as a learning opportunity and created a base template for future projects.
 
 Template
-- Not much choice as they as were part of the requirements, but this is what I would want in my web seed.
+- Not much choice as they were part of the requirements, but this is what I would want in my web seed.
 
 Folder Structure
 - Basically as provided by the with-jest-typescript example template but again this aligned with my practices.
@@ -44,3 +44,7 @@ I was unable to deploy to Github Pages. I found numerous sources on configuring 
 - Even after publishing to Github Pages in a gh-pages branch I was unable to access the index.html file as it seems bundled by Next.js.
 
 I did manage to publish my project to https://seven-west.efiliba.now.sh using 'now' a library provided by Next.js.
+
+## Changes after submission
+- Add favicon
+- Fix: hide text until image height known
